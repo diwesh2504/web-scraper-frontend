@@ -4,7 +4,7 @@ const loadProducts=(data)=>{
 
 export const requestLoadProducts=()=>{
     return (dispatch)=>{
-        fetch("http://localhost:4040/get-amazon")
+        fetch("https://web-scraper-backend.herokuapp.com/get-amazon")
         .then(res=>res.json())
         .then(data=>dispatch(loadProducts(data)))
         .catch(err=>console.log("Couldnt load Products to FE",err));

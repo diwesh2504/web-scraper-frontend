@@ -11,8 +11,8 @@ const App=(props)=>{
             </div>
             <div className="container">
                 <div className="row">
-                    <div className="col-2"></div>
-                    <div className="col-8">
+                    <div className="col-3"></div>
+                    <div className="col-6">
                         <Search/>
                        {props.view=="none"? <Paginate/>:""}
                     </div>
